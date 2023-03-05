@@ -1,8 +1,11 @@
 import { Center, Flex, Text, Highlight, Heading } from "@chakra-ui/react";
+import { cursos } from "./cursos";
+
+import { formatPrice } from "../../helpers/formatPrice";
 
 const Cursos = () => {
   return (
-    <Flex flexDir="column" bgColor="#EEE" flex="1" align="center" p="20px">
+    <Flex flexDir="column" bgColor="#EEE" flex="1" pt="20px" align="center">
       <Heading lineHeight="tall">
         <Highlight
           query="Cursos"
@@ -18,8 +21,30 @@ const Cursos = () => {
         flexWrap="wrap"
         gap="30px"
       >
-        <Text>Curso 1</Text>
-        <Text>Curso 2</Text>
+        {cursos.map((curso, index) => (
+          <Flex
+            key={index}
+            cursor="pointer"
+            flexDir="column"
+            w="50%"
+            bgColor="#FFF"
+            p="20px"
+            borderRadius="10px"
+            boxShadow="1px 1px 8px #000"
+          >
+            <a href={curso.link}>
+              <Text
+                _hover={{ textDecor: "underline" }}
+                color="red.500"
+                fontWeight="bold"
+              >
+                {curso.name}
+              </Text>
+            </a>
+            <Text color="green.500">{formatPrice(curso.price)}</Text>
+            <Text fontWeight="600">{curso.description}</Text>
+          </Flex>
+        ))}
       </Flex>
     </Flex>
   );
