@@ -6,9 +6,12 @@ import {
   InputRightElement,
   Text,
   Button,
+  Image,
   useToast,
 } from "@chakra-ui/react";
 
+import github from "../../assets/images/github.png";
+import instagram from "../../assets/images/instagram.png";
 import bg2 from "../../assets/images/bg2.jpg";
 import bg3 from "../../assets/images/bg3.jpg";
 import bg4 from "../../assets/images/bg4.jpg";
@@ -17,24 +20,25 @@ function HomePage() {
   const [email, setEmail] = useState("");
   const toast = useToast();
 
-  const handleSend = (email) => {
-    if (email) {
-      toast({
-        title: "Email enviado com sucesso!",
-        description: "Em breve você receberá nossas novidades.",
-        status: "success",
-        duration: 2000,
-        isClosable: true,
-      });
-      setEmail("");
-    }
-  };
+  // const handleSend = (email) => {
+  //   if (email) {
+  //     toast({
+  //       title: "Email enviado com sucesso!",
+  //       description: "Em breve você receberá nossas novidades.",
+  //       status: "success",
+  //       duration: 2000,
+  //       isClosable: true,
+  //     });
+  //     setEmail("");
+  //   }
+  // };
 
   return (
     <Flex flexDir="column" h="92vh">
       <Flex flex="1" w="100%">
         <Flex
           cursor="pointer"
+          gap="10px"
           _hover={{ opacity: "1" }}
           opacity={"0.7"}
           justify="center"
@@ -45,14 +49,23 @@ function HomePage() {
           bgImg={`${bg2}`}
           flex="1"
         >
-          <Text fontSize="30px" color="#FFF" fontWeight="bold">
-            Wake Boarding
-          </Text>
+          <Image w="40px" src={instagram} />
+          <a href="https://www.instagram.com/programandoficafacil/">
+            <Text
+              _hover={{ textDecor: "underline" }}
+              fontSize="25px"
+              color="#FFF"
+              fontWeight="bold"
+            >
+              @programandoficafacil
+            </Text>
+          </a>
         </Flex>
         <Flex
           cursor="pointer"
           _hover={{ opacity: "1" }}
           opacity={"0.7"}
+          gap="10px"
           justify="center"
           align="center"
           objectFit="cover"
@@ -61,9 +74,17 @@ function HomePage() {
           bgImg={`${bg3}`}
           flex="1"
         >
-          <Text color="#FFF" fontSize="2xl" fontWeight="bold">
-            wake Boarding
-          </Text>
+          <Image w="40px" src={github} />
+          <a href="https://github.com/MarceloBxD">
+            <Text
+              _hover={{ textDecor: "underline" }}
+              fontSize="25px"
+              color="#FFF"
+              fontWeight="bold"
+            >
+              MarceloBxD
+            </Text>
+          </a>
         </Flex>
       </Flex>{" "}
       <Flex
@@ -79,12 +100,8 @@ function HomePage() {
         bgImg={`${bg4}`}
         flex="1"
         w="100%"
-      >
-        <Text color="#FFF" fontWeight="bold" fontSize="25px">
-          Wake Boarding
-        </Text>
-      </Flex>
-      <Flex
+      ></Flex>
+      {/* <Flex
         position="fixed"
         bottom="20px"
         right="20px"
@@ -96,6 +113,8 @@ function HomePage() {
         </Text>
         <InputGroup>
           <Input
+            outline="none"
+            focusBorderColor="#FFF"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             color="#FFF"
@@ -113,7 +132,7 @@ function HomePage() {
             </Button>
           </InputRightElement>
         </InputGroup>
-      </Flex>
+      </Flex> */}
     </Flex>
   );
 }

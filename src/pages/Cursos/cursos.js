@@ -1,32 +1,24 @@
 export const cursos = [
   {
-    name: "Curso de Python",
-    description: "Curso de Python para principiantes",
-    price: 20,
-    link: "https://app-vlc.hotmart.com/market/details?producerUcode=bbba01bf-391d-4172-be07-ce6719691a67&productUcode=2887ef87-73f4-4229-b56b-21ba46529999&bookmarked=false&searchId=c937b73d-5bdd-45d2-8837-584ae8f88f7d",
+    name: "Antiotário",
+    description:
+      "O Antiotário tem ensinamentos que demorariam anos para um homem comum aprender. Parcelado em 3x de R$ 15,97",
+    price: 47.9,
+    link: "https://go.hotmart.com/N80403667G",
+    productPage: "https://go.hotmart.com/N80403667G?dp=1",
   },
   {
-    name: "Curso de C++",
-    description: "Curso de C++ para principiantes",
-    price: 80,
-    link: "https://app-vlc.hotmart.com/market/details?producerUcode=bbba01bf-391d-4172-be07-ce6719691a67&productUcode=2887ef87-73f4-4229-b56b-21ba46529999&bookmarked=false&searchId=c937b73d-5bdd-45d2-8837-584ae8f88f7d",
+    name: "Inglês com a gringa",
+    description:
+      "APRENDA SE COMUNICAR EM SUAS VIAGENS SEM PRECISAR DE GRAMÁTICA ! Até (12x) 49,60",
+    price: 497,
+    link: "https://go.hotmart.com/I80404948Q?ap=6eef",
   },
   {
-    name: "Curso de Java",
-    description: "Curso de Java para principiantes",
-    price: 159.99,
-    link: "https://app-vlc.hotmart.com/market/details?producerUcode=bbba01bf-391d-4172-be07-ce6719691a67&productUcode=2887ef87-73f4-4229-b56b-21ba46529999&bookmarked=false&searchId=c937b73d-5bdd-45d2-8837-584ae8f88f7d",
-  },
-  {
-    name: "Do básico ao avançado em Python",
-    description: "Curso de Python para e intermediários",
-    price: 199.99,
-    link: "https://app-vlc.hotmart.com/market/details?producerUcode=bbba01bf-391d-4172-be07-ce6719691a67&productUcode=2887ef87-73f4-4229-b56b-21ba46529999&bookmarked=false&searchId=c937b73d-5bdd-45d2-8837-584ae8f88f7d",
-  },
-  {
-    name: "Do básico ao avançado em Python",
-    description: "Curso de Python para e intermediários",
-    price: 199.99,
-    link: "https://app-vlc.hotmart.com/market/details?producerUcode=bbba01bf-391d-4172-be07-ce6719691a67&productUcode=2887ef87-73f4-4229-b56b-21ba46529999&bookmarked=false&searchId=c937b73d-5bdd-45d2-8837-584ae8f88f7d",
+    name: "Dicas para o Sucesso no Marketing de Afiliados",
+    description:
+      "Marketing de afiliados é uma ótima maneira de desfrutar de um fluxo de receita. ",
+    price: 9.9,
+    link: "https://go.hotmart.com/H80405091D",
   },
 ];

@@ -9,9 +9,9 @@ const Cursos = () => {
       <Heading lineHeight="tall">
         <Highlight
           query="Cursos"
-          styles={{ px: "2", py: "1", rounded: "full", bg: "red.500" }}
+          styles={{ px: "2", py: "1", rounded: "full", bg: "#648cc4" }}
         >
-          Cursos em alta
+          Cursos indicados
         </Highlight>
       </Heading>
       <Flex
@@ -26,7 +26,7 @@ const Cursos = () => {
             key={index}
             cursor="pointer"
             flexDir="column"
-            w="50%"
+            w="55%"
             bgColor="#FFF"
             p="20px"
             borderRadius="10px"
@@ -35,7 +35,7 @@ const Cursos = () => {
             <a href={curso.link}>
               <Text
                 _hover={{ textDecor: "underline" }}
-                color="red.500"
+                color="#648cc4"
                 fontWeight="bold"
               >
                 {curso.name}
