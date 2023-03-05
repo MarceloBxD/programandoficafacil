@@ -37,7 +37,6 @@ function HomePage() {
     <Flex flexDir="column" h="92vh">
       <Flex flex="1" w="100%">
         <Flex
-          cursor="pointer"
           gap="10px"
           _hover={{ opacity: "1" }}
           opacity={"0.7"}
@@ -62,7 +61,6 @@ function HomePage() {
           </a>
         </Flex>
         <Flex
-          cursor="pointer"
           _hover={{ opacity: "1" }}
           opacity={"0.7"}
           gap="10px"
@@ -88,19 +86,20 @@ function HomePage() {
         </Flex>
       </Flex>{" "}
       <Flex
-        cursor="pointer"
-        _hover={{ opacity: "1" }}
-        opacity={"0.7"}
         justify="center"
         flexDir="column"
         align="center"
         objectFit="cover"
         backgroundPosition="center"
+        bgColor="#000"
         backgroundSize="cover"
-        bgImg={`${bg4}`}
         flex="1"
         w="100%"
-      ></Flex>
+      >
+        <Text color="#FFF" fontSize="25" fontWeight="500">
+          Bem-vindo(a) ao programandoficafacil! 🫶
+        </Text>
+      </Flex>
       {/* <Flex
         position="fixed"
         bottom="20px"
