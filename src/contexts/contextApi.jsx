@@ -9,9 +9,7 @@ import React, {
 const AppContext = createContext();
 
 export function AppProvider({ children }) {
-  const value = {
-    location,
-  };
+  const value = {};
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }

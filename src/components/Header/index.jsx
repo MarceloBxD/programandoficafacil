@@ -1,5 +1,7 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Avatar, Flex, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+
+import marcelo from "../../assets/images/marcelo.jpg";
 
 export const Header = () => {
   return (
@@ -55,6 +57,7 @@ export const Header = () => {
           Sobre
         </Text>
       </Link>
+      <Avatar size="sm" src={marcelo} />
     </Flex>
   );
 };

@@ -6,7 +6,7 @@ import history from "../../assets/images/history.png";
 
 function Sobre() {
   return (
-    <Flex flex="1" bgColor="#2B303A">
+    <Flex flex="1" p="20px" bgColor="#2B303A">
       <Flex
         gap="10px"
         flexDir="column"
@@ -42,6 +42,7 @@ function Sobre() {
         </Text>
       </Flex>
       <Flex
+        border="3px solid #fff"
         flexDir="column"
         gap="10px"
         justify="center"

@@ -6,7 +6,7 @@ import { Header } from "./components/Header";
 
 function App() {
   return (
-    <Flex flexDir="column" h="100vh">
+    <Flex flexDir="column" flex="1" h="100vh">
       <Header />
       <Outlet />
     </Flex>
