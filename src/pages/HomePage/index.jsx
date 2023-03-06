@@ -9,6 +9,7 @@ import {
   Image,
   useToast,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 import setacurva from "../../assets/images/seta-curva.png";
 import seta from "../../assets/images/seta-direita.png";
@@ -64,7 +65,9 @@ function HomePage() {
         bottom="20px"
         right="20px"
       >
-        <Image w="40px" h="40px" src={seta} />
+        <Link to="/thanks">
+          <Image w="40px" h="40px" src={seta} />
+        </Link>
       </Button>
     </Flex>
   );

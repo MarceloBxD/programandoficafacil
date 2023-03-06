@@ -4,6 +4,7 @@ import App from "../App";
 import Cursos from "../pages/Cursos";
 import HomePage from "../pages/HomePage";
 import Sobre from "../pages/Sobre";
+import Thanks from "../pages/Thanks";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
       {
         path: "/sobre",
         element: <Sobre />,
+      },
+      {
+        path: "/thanks",
+        element: <Thanks />,
       },
     ],
   },

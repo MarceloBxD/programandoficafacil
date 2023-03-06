@@ -16,7 +16,7 @@ export const Header = () => {
     >
       <Link to="/cursos-em-alta">
         <Text
-          p="5px"
+            p="5px"
           _hover={{
             color: "#EEE",
             bgColor: "#648cc4",
