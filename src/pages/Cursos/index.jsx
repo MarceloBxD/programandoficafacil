@@ -5,11 +5,16 @@ import { formatPrice } from "../../helpers/formatPrice";
 
 const Cursos = () => {
   return (
-    <Flex flexDir="column" bgColor="#EEE" flex="1" pt="20px" align="center">
-      <Heading lineHeight="tall">
+    <Flex flexDir="column" bgColor="#111" flex="1" pt="20px" align="center">
+      <Heading color="#FFF" lineHeight="tall">
         <Highlight
           query="Cursos"
-          styles={{ px: "2", py: "1", rounded: "full", bg: "#648cc4" }}
+          styles={{
+            px: "2",
+            py: "1",
+            rounded: "full",
+            bg: "#648cc4",
+          }}
         >
           Cursos indicados
         </Highlight>
@@ -24,10 +29,11 @@ const Cursos = () => {
         {cursos.map((curso, index) => (
           <Flex
             key={index}
-            cursor="pointer"
+            _hover={{ opacity: "1" }}
+            opacity="0.8"
             flexDir="column"
             w="55%"
-            bgColor="#FFF"
+            bgColor="#000"
             p="20px"
             borderRadius="10px"
             boxShadow="1px 1px 8px #000"
@@ -42,7 +48,9 @@ const Cursos = () => {
               </Text>
             </a>
             <Text color="green.500">{formatPrice(curso.price)}</Text>
-            <Text fontWeight="600">{curso.description}</Text>
+            <Text color="#FFF" fontWeight="600">
+              {curso.description}
+            </Text>
           </Flex>
         ))}
       </Flex>
