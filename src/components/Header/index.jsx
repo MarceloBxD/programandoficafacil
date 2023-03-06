@@ -43,18 +43,6 @@ export const Header = () => {
           @programandoficafacil
         </Text>
       </Link>
-      <Link to="/noticias">
-        <Text
-          p="5px"
-          _hover={{
-            color: "#000",
-            bgColor: "#FFF",
-            borderRadius: "10px",
-          }}
-        >
-          Noticias
-        </Text>
-      </Link>
       <Link to="/sobre">
         <Text
           p="5px"
