@@ -10,6 +10,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 
+import linkedin from "../../assets/images/linkedin.png";
 import github from "../../assets/images/github.png";
 import instagram from "../../assets/images/instagram.png";
 import bg2 from "../../assets/images/bg2.jpg";
@@ -35,70 +36,70 @@ function HomePage() {
 
   return (
     <Flex flexDir="column" h="92vh">
-      <Flex flex="1" w="100%">
-        <Flex
-          gap="10px"
-          _hover={{ opacity: "1" }}
-          opacity={"0.7"}
-          justify="center"
-          align="center"
-          objectFit="cover"
-          backgroundPosition="center"
-          backgroundSize="cover"
-          bgImg={`${bg2}`}
-          flex="1"
-        >
-          <Image w="40px" src={instagram} />
-          <a href="https://www.instagram.com/programandoficafacil/">
-            <Text
-              _hover={{ textDecor: "underline" }}
-              fontSize="25px"
-              color="#FFF"
-              fontWeight="bold"
-            >
-              @programandoficafacil
-            </Text>
-          </a>
-        </Flex>
-        <Flex
-          _hover={{ opacity: "1" }}
-          opacity={"0.7"}
-          gap="10px"
-          justify="center"
-          align="center"
-          objectFit="cover"
-          backgroundPosition="center"
-          backgroundSize="cover"
-          bgImg={`${bg3}`}
-          flex="1"
-        >
-          <Image w="40px" src={github} />
-          <a href="https://github.com/MarceloBxD">
-            <Text
-              _hover={{ textDecor: "underline" }}
-              fontSize="25px"
-              color="#FFF"
-              fontWeight="bold"
-            >
-              MarceloBxD
-            </Text>
-          </a>
-        </Flex>
-      </Flex>{" "}
       <Flex
+        bgImg={`${bg4}`}
+        objectFit="cover"
+        backgroundPosition="center"
+        backgroundSize="cover"
+        flex="1"
+        w="100%"
+      ></Flex>{" "}
+      <Flex
+        borderTop="3px solid #FFF"
+        bgColor="#000"
         justify="center"
-        flexDir="column"
         align="center"
         objectFit="cover"
         backgroundPosition="center"
-        bgColor="#000"
         backgroundSize="cover"
         flex="1"
         w="100%"
       >
-        <Text color="#FFF" fontSize="25" fontWeight="500">
-          Bem-vindo(a) ao programandoficafacil! 🫶
-        </Text>
+        <Flex
+          flexDir="column"
+          justify="center"
+          align="center"
+          h="100%"
+          gap="10px"
+          flex="1"
+        >
+          <a href="https://www.instagram.com/programandoficafacil/">
+            <Image w="80px" alt="Instagram" src={instagram} />
+          </a>
+          <Text fontWeight="500" fontSize="18px" color="#FFF">
+            Instagram
+          </Text>
+        </Flex>
+        <Flex
+          flexDir="column"
+          gap="10px"
+          justify="center"
+          align="center"
+          h="100%"
+          flex="1"
+        >
+          <a href="https://github.com/MarceloBxD">
+            <Image w="80px" src={github} />
+          </a>
+          <Text fontWeight="500" fontSize="18px" color="#FFF">
+            Github
+          </Text>
+        </Flex>
+        <Flex
+          flexDir="column"
+          gap="10px"
+          justify="center"
+          align="center"
+          h="100%"
+          flex="1"
+        >
+          <a href="https://www.linkedin.com/in/marcelo-bracet-b51938223/">
+            <Image cursor="pointer" w="80px" src={linkedin} alt="Linkedin" />
+          </a>
+          <Text color="#FFF" fontWeight="500">
+            Linkedin
+          </Text>
+        </Flex>
       </Flex>
       {/* <Flex
         position="fixed"
