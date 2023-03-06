@@ -16,7 +16,7 @@ export const Header = () => {
     >
       <Link to="/cursos-em-alta">
         <Text
-            p="5px"
+          p="5px"
           _hover={{
             color: "#EEE",
             bgColor: "#648cc4",
@@ -24,6 +24,18 @@ export const Header = () => {
           }}
         >
           Cursos
+        </Text>
+      </Link>{" "}
+      <Link to="/thanks">
+        <Text
+          p="5px"
+          _hover={{
+            color: "#EEE",
+            bgColor: "#DAE292",
+            borderRadius: "10px",
+          }}
+        >
+          Ebook
         </Text>
       </Link>{" "}
       <Link to="/">
@@ -35,12 +47,24 @@ export const Header = () => {
         <Text
           p="5px"
           _hover={{
-            color: "#EEE",
-            bgColor: "#648cc4",
+            color: "#000",
+            bgColor: "#FF0FF2",
             borderRadius: "10px",
           }}
         >
           Sobre
+        </Text>
+      </Link>
+      <Link to="/noticias">
+        <Text
+          p="5px"
+          _hover={{
+            color: "#000",
+            bgColor: "#FFF",
+            borderRadius: "10px",
+          }}
+        >
+          Noticias
         </Text>
       </Link>
     </Flex>

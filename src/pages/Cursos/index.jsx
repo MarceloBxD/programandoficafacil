@@ -3,6 +3,8 @@ import { cursos } from "./cursos";
 
 import { formatPrice } from "../../helpers/formatPrice";
 
+import bg2 from "../../assets/images/bg2.jpg";
+
 const Cursos = () => {
   return (
     <Flex flexDir="column" bgColor="#111" flex="1" pt="20px" align="center">
@@ -20,8 +22,8 @@ const Cursos = () => {
         </Highlight>
       </Heading>
       <Flex
+        flex="1"
         mt="20px"
-        w="1000px"
         justify="space-around"
         flexWrap="wrap"
         gap="30px"
@@ -31,12 +33,15 @@ const Cursos = () => {
             key={index}
             _hover={{ opacity: "1" }}
             opacity="0.8"
+            w="50%"
             flexDir="column"
-            w="55%"
-            bgColor="#000"
+            objectFit="cover"
+            backgroundPosition="center"
+            backgroundSize="cover"
+            bgImg={`${bg2}`}
             p="20px"
             borderRadius="10px"
-            boxShadow="1px 1px 8px #000"
+            boxShadow="1px 1px 8px #fff"
           >
             <a href={curso.link}>
               <Text

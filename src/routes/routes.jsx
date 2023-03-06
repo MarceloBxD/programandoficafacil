@@ -5,6 +5,7 @@ import Cursos from "../pages/Cursos";
 import HomePage from "../pages/HomePage";
 import Sobre from "../pages/Sobre";
 import Thanks from "../pages/Thanks";
+import Noticias from "../pages/Noticias";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path: "/thanks",
         element: <Thanks />,
+      },
+      {
+        path: "/noticias",
+        element: <Noticias />,
       },
     ],
   },
