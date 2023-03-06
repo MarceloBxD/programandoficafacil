@@ -27,7 +27,9 @@ export const Header = () => {
         </Text>
       </Link>{" "}
       <Link to="/">
-        <Text>@programandoficafacil</Text>
+        <Text fontSize="18px" fontFamily="mynerve">
+          @programandoficafacil
+        </Text>
       </Link>
       <Link to="/sobre">
         <Text
