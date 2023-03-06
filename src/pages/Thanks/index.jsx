@@ -24,6 +24,13 @@ function Thanks() {
       gap="15px"
       bgImg={`${thanks}`}
     >
+      <Text fontSize="20px" fontWeight="bold" color="#FFF">
+        Quer ler um livro curto, e que te mostre como se desenvolver e mostra
+        maneiras e dicas de fazer isso?
+      </Text>
+      <Text fontSize="18px" color="#FFF">
+        Ta esperando oque?
+      </Text>
       <Heading color="#FFF" lineHeight="tall">
         <Highlight
           query="Ebook"
@@ -38,11 +45,10 @@ function Thanks() {
         </Highlight>
       </Heading>
       <Flex align="center" flexDir="column">
-        <Image borderTopRadius="10px" w="200px" h="200px" src={ebook} />
+        <Image w="200px" h="200px" src={ebook} />
         <Text
-          fontWeight="bold  "
+          fontWeight="bold "
           color="#FFF"
-          mt="-25px"
           textDecor="underline"
           _hover={{ textDecor: "none" }}
         >

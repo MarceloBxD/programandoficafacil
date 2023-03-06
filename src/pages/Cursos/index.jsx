@@ -43,6 +43,9 @@ const Cursos = () => {
             borderRadius="10px"
             boxShadow="1px 1px 8px #fff"
           >
+            <Text fontWeight="bold" color="#FFF">
+              {curso.autor ? "Autor: " + curso.autor : null}
+            </Text>
             <a href={curso.link}>
               <Text
                 _hover={{ textDecor: "underline" }}
@@ -52,8 +55,9 @@ const Cursos = () => {
                 {curso.name}
               </Text>
             </a>
+
             <Text color="green.500">{formatPrice(curso.price)}</Text>
-            <Text color="#FFF" fontWeight="600">
+            <Text mt="10px" color="#FFF" fontWeight="600">
               {curso.description}
             </Text>
           </Flex>
