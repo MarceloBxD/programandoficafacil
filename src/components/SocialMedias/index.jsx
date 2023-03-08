@@ -13,9 +13,11 @@ const SocialMedias = ({ name, img, href }) => {
       <a href={href}>
         <Image w="60px" alt="Instagram" src={img} />
       </a>
+
       <Text fontWeight="500" fontSize="18px" color="#FFF">
         {name}
       </Text>
+      
     </Flex>
   );
 };

@@ -63,6 +63,11 @@ const Cursos = () => {
           </Flex>
         ))}
       </Flex>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8505875581417099"
+        crossorigin="anonymous"
+      ></script>
     </Flex>
   );
 };
